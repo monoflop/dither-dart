@@ -8,7 +8,8 @@ int ditherColor(int color, double error) {
   return getColor(r, g, b);
 }
 
-int quantise(int pixel, {int errR, int errG, int errB, int err}) {
+int quantise(int pixel,
+    {int errR = 0, int errG = 0, int errB = 0, int err = 0}) {
   var oldR = getRed(pixel);
   var oldG = getGreen(pixel);
   var oldB = getBlue(pixel);
